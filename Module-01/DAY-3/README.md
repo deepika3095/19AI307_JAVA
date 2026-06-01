@@ -1,77 +1,70 @@
-# Ex.No:1(C) CONTROL STATEMENTS
+# Ex.No:1(C) LOOPING STATEMENT
 
+## QUESTION:
+Construct a right-angled triangle star pattern using for loop.
 ## AIM:
-To write a java Program to print square of the value.
+To write a Java program using looping statements to print a right-angled triangle star pattern based on user input.
 
 ## ALGORITHM :
+1.	Start the program.
 
-1.Start the program.
-   
-2.Import the Scanner class to read input from the user.
-  
-3.Define a class named Demo.
- 
-5.Inside the class, define a method check(int num)
+2.	Import the necessary package 'java.util'
 
-6.Calculates the square of the number.
+3. Read the number of rows from the user.
 
-7.Prints the squared result.
+4. Use an outer loop to iterate through each row.
 
-8.In the main() method:
+5. Use an inner loop to print stars (*) for each row.
 
-9.Create a Scanner object to take input.
+6. Move to the next line after printing stars for each row.
 
-10.Read an integer input and store it in the variable num.
-
-11.Create an object s of the Demo class.
-
-12.Call the check(num) method using the object s.
-
-13.End the program.
-
-
+7. End the program.
 
 
 ## PROGRAM:
  ```
 /*
-Program to implement a class & objects using Java
+Program to implement a Looping Statement using Java
 Developed by: Deepika R
-RegisterNumber:  212223230038
+Register Number:212223230038
 */
 ```
 
-## Sourcecode.java:
+## SOURCE CODE:
+
 ```
-import java.util.Scanner;
-public class Demo
+import java.util.*;
+public class TrianglePattern
 {
-public void check(int num)
-{
-    num=num*num;
-    System.out.println(num);
-}
-public static void main(String[] args) 
+    public static void main(String args[])
     {
-        Scanner in = new Scanner(System.in);
-        int num=in.nextInt();
-    Demo s=new Demo();
-    s.check(num);   
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for (int i = 1; i <= n; i++) 
+        {         
+            for (int j = 1; j <= i; j++) 
+            {      
+                System.out.print("* ");
+            }
+            System.out.println();              
+        }
     }
 }
-
-
 ```
 
 
 
 
 ## OUTPUT:
-<img width="351" height="161" alt="Screenshot 2026-03-27 234816" src="https://github.com/user-attachments/assets/030d958d-aded-4af4-b950-4be921afee7b" />
-
+<img width="399" height="395" alt="image" src="https://github.com/user-attachments/assets/07286d0c-5174-4702-8d58-34b630bd23d6" />
 
 
 
 ## RESULT:
-Thus, the Java program to check given number is zero or not was created successfully.
+Thus, the Java program using looping statements to print a right-angled triangle star pattern was successfully written, executed, and verified.
+
+
+
+
+
 
